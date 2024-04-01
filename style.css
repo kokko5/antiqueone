@@ -141,6 +141,9 @@ table tr:nth-child(even){
     padding-top: .5rem;
     padding-bottom: .5rem;
 }
+#WORKS{
+    margin-top: 6rem;
+}
 .adj-small{
     text-align: center;
     background: #333;
@@ -164,6 +167,9 @@ table tr:nth-child(even){
 .works-ex img{
     width: 40%;
 }
+#FAQ{
+    margin-top: 6rem;
+}
 .faq-container{
     margin-top: 2rem;
     text-align: center;
@@ -182,6 +188,7 @@ span{
     padding-right: .5rem;
 }
 #CONTACT{
+    margin-top: 6rem;
     text-align: center;
 }
 #CONTACT p{
@@ -201,6 +208,10 @@ button{
 }
 .tel-desktop-none{
     display: none;
+}
+#SNS{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 #SNS button{display: block;
     margin: 2.5rem auto;
