@@ -29,9 +29,12 @@
   <!-- from here is css -->
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <!-- google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
+  <!--animate.css-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link href="./style.css" rel="stylesheet">
   <!-- to here is css -->
 
@@ -48,22 +51,24 @@
         </button>
         <nav class="nav">
           <ul class="main-nav nav__list">
-            <li class="nav__item"><a href="#TOP" class="h-top">TOP</a></li>
-            <li class="nav__item"><a href="#COMPANY" class="h-company">COMPANY<a></li>
-            <li class="nav__item"><a href="#SERVICES" class="h-services">SERVICES</a></li>
-            <li class="nav__item"><a href="#WORKS" class="h-works">WORKS</a></li>
-            <li class="nav__item"><a href="#FAQ" class="h-faq">FAQ</a></li>
-            <li class="nav__item"><a href="#CONTACT" class="h-contact">CONTACT</a></li>
-            <li class="nav__item"><a href="#SNS">SNS</a></li>
+            <li class="nav__item"><a href="#TOP" class="nav__link h-top">TOP</a></li>
+            <li class="nav__item"><a href="#COMPANY" class="nav__link h-company">COMPANY<a></li>
+            <li class="nav__item"><a href="#SERVICES" class="nav__link h-services">SERVICES</a></li>
+            <li class="nav__item"><a href="#WORKS" class="nav__link h-works">WORKS</a></li>
+            <li class="nav__item"><a href="#FAQ" class="nav__link h-faq">FAQ</a></li>
+            <li class="nav__item"><a href="#CONTACT" class="nav__link h-contact">CONTACT</a></li>
+            <li class="nav__item"><a href="#SNS" class="nav__link">SNS</a></li>
           </ul>
         </nav>
       </div><!--/.header__container-->
   </header>
 
     <div id="TOP">
-        <h2>Clean up for the future from Seto</h2>
-        <p>不用品買取・回収、残置物撤去</p>
+      <img src="images/top.jpg" alt="">
+      <h2>Clean up for the future from Seto</h2>
     </div><!--/#TOP-->
+
+    <p class="scroll animate__animated animate__bounce animate__slower animate__infinite">scroll<br>↓</p>
   
   <div class="wrapper">  
 
@@ -71,29 +76,24 @@
       <div class="shadow-bg">
         <h2>COMPANY</h2>
         <p class="company-explanation">株式会社アンティークワンは2022年8月に創立しました。
-          <br>愛知県瀬戸市を中心に岐阜県、静岡県、三重県に
-          <br>不用品回の買取・回収、引越し時の不用品回収、
-          <br>事務所・店舗・空家の整理、残置物撤去、
-          <br>家具・家電等のリース・レンタル、ハウスクリーニング、
-          <br>樹木の剪定・除草作業、建物解体など
-          <br>高品質の様々なサービスを皆様にご提供させていただいています。
-          <br>当社ではファイト溢れる若い社員が働いており、
-          <br>様々な形で地域のコミュニティへ貢献して参ります。
+          愛知県瀬戸市を中心に岐阜県、静岡県、三重県に不用品回の買取・回収、引越し時の不用品回収、事務所・店舗・空家の整理、残置物撤去、家具・家電等のリース・レンタル、ハウスクリーニング、
+          樹木の剪定・除草作業、建物解体など、高品質の様々なサービスを皆様にご提供させていただいています。
+          <br>当社ではファイト溢れる若い社員が働いており、様々な形で地域のコミュニティへ貢献して参ります。
         </p>
       </div><!--/.shadow-bg-->
       <div class="info">
-        <table border="1">
+        <table>
           <tr>
             <td>会社名</td>
             <td>株式会社アンティークワン</td>
           </tr>
           <tr>
             <td>所在地</td>
-            <td>本社<br>〒468-0058<br>愛知県名古屋市天白区植田西2-217<br>瀬戸倉庫<br>〒489-0961<br>愛知県瀬戸市田中町83</td>
+            <td>本社　〒468-0058　愛知県名古屋市天白区植田西2-217<br>瀬戸倉庫　〒489-0961　愛知県瀬戸市田中町83</td>
           </tr>
           <tr>
             <td>電話番号</td>
-            <td>本社<br>052-803-0801<br>瀬戸倉庫<br>0561-67-0629</td>
+            <td>本社　052-803-0801 / 瀬戸倉庫　0561-67-0629</td>
           </tr>
           <tr>
             <td>代表取締役</td>
@@ -101,7 +101,7 @@
           </tr>
           <tr>
             <td>古物商許可</td>
-            <td>愛知県公安委員会<br>第541432203500号</td>
+            <td>愛知県公安委員会　第541432203500号</td>
           </tr>
           <tr>
             <td>事業内容</td>
@@ -116,47 +116,46 @@
             </td>
           </tr>
         </table>
-        <div class="maps">
-          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3260.4146009465044!2d137.09661637632726!3d35.19614045646785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600367b7e3191b93%3A0x68eb1d9e34c45b9a!2z77yI5qCq77yJ44Ki44Oz44OG44Kj44O844Kv44Ov44Oz!5e0!3m2!1sja!2sjp!4v1711345479410!5m2!1sja!2sjp" width="500" height="400" frameborder="0"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d407.8645006342995!2d136.9814474269157!3d35.13376957473825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600364d541227311%3A0x89f9caba807f667e!2z44CSNDY4LTAwNTgg5oSb55-l55yM5ZCN5Y-k5bGL5biC5aSp55m95Yy65qSN55Sw6KW_77yS5LiB55uu77yS77yR77yXIOODquODk-ODs-OCsOOCueODmuODvOOCue-8oe-8kQ!5e0!3m2!1sja!2sjp!4v1711345451792!5m2!1sja!2sjp" width="500" height="400" frameborder="0"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
-        </div><!--/.maps-->
+        <div class="map">
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3260.4146009465044!2d137.09661637632726!3d35.19614045646785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600367b7e3191b93%3A0x68eb1d9e34c45b9a!2z77yI5qCq77yJ44Ki44Oz44OG44Kj44O844Kv44Ov44Oz!5e0!3m2!1sja!2sjp!4v1711345479410!5m2!1sja!2sjp" width="400" height="400" frameborder="0"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div><!--/.map-->
       </div><!--/.info-->
     </div><!--/#COMPANY-->
 
     <div id="SERVICES">
       <h2>SERVICES</h2>
       <div class="services-photo">
-        <div class="one-services-photo">
-          <p>不用品買取・回収</p>
-          <img src="" alt="不用品買取・回収">
+        <div>
+          <p class="services-photo-p">不用品買取・回収</p>
+          <img src="images/services1.jpg" alt="不用品買取・回収">
         </div>
-        <div class="one-services-photo">
-          <p>引越し時の不用品回収</p>
-          <img src="" alt="引越し時の不用品回収">
+        <div>
+          <p class="services-photo-p">引越し時の不用品回収</p>
+          <img src="images/services2.jpg" alt="引越し時の不用品回収">
         </div>
-        <div class="one-services-photo">
-          <p>事務所・店舗・空屋整理</p>
-          <img src="" alt="事務所・店舗・空屋整理">
+        <div>
+          <p class="adj-small">事務所・店舗・空屋整理</p>
+          <img src="images/services3.jpg" alt="事務所・店舗・空屋整理">
         </div>
-        <div class="one-services-photo">
-          <p>残置物撤去</p>
-          <img src="" alt="残置物撤去">
+        <div>
+          <p class="services-photo-p">残置物撤去</p>
+          <img src="images/services4.jpg" alt="残置物撤去">
         </div>
-        <div class="one-services-photo">
-          <p>家具・家電等のリース、レンタル</p>
-          <img src="" alt="家具・家電等のリース、レンタル">
+        <div>
+          <p class="adj-small">家具・家電等のリース、レンタル</p>
+          <img src="images/services5.jpg" alt="家具・家電等のリース、レンタル">
         </div>
-        <div class="one-services-photo">
-          <p>ハウスクリーニング　</p>
-          <img src="" alt="ハウスクリーニング　">
+        <div>
+          <p class="services-photo-p">ハウスクリーニング</p>
+          <img src="images/services6.jpg" alt="ハウスクリーニング　">
         </div>
-        <div class="one-services-photo">
-          <p>樹木の剪定、除草作業</p>
-          <img src="" alt="樹木の剪定、除草作業">
+        <div>
+          <p class="services-photo-p">樹木の剪定、除草作業</p>
+          <img src="images/services7.jpg" alt="樹木の剪定、除草作業">
         </div>
-        <div class="one-services-photo">
-          <p>建物解体</p>
-          <img src="" alt="建物解体">
+        <div>
+          <p class="services-photo-p">建物解体</p>
+          <img src="images/services8.jpg" alt="建物解体">
         </div>
       </div><!--/.services-photo-->
     </div><!--/#SERVICES-->
@@ -165,39 +164,48 @@
       <h2>WORKS</h2>
       <div class="works-exs">
         <div class="works-ex">
-          <img src="" alt="建物解体">
-          <p>テキストテキストテキストテキストテキスト</p>
+          <img src="images/works1.jpg" alt="作業前">
+          <img src="images/works2.jpg" alt="作業後">
         </div>
+        <p>ここに作業事例の紹介文を入れます。<br>どのような方からご依頼者があったのか、<br>所要時間や費用その他エピソードなどがあると良いかと思います。</p>
         <div class="works-ex">
-          <img src="" alt="建物解体">
-          <p>テキストテキストテキストテキストテキスト</p>
+          <img src="images/works3.jpg" alt="作業前">
+          <img src="images/works4.jpg" alt="作業後">
         </div>
+        <p>ここに作業事例の紹介文を入れます。<br>どのような方からご依頼者があったのか、<br>所要時間や費用その他エピソードなどがあると良いかと思います。</p>
       </div><!--/.works-exs-->
     </div><!--/#WORKS-->
 
     <div id="FAQ">
       <h2>FAQ</h2>
-      <ul>
-        <li><span>Q</span></li>
-        <li><span>A</span></li>
-        <li><span>Q</span></li>
-        <li><span>A</span></li>
-        <li><span>Q</span></li>
-        <li><span>A</span></li>
-        <li><span>Q</span></li>
-        <li><span>A</span></li>
+      <ul class="faq-container">
+        <li><span>Q</span>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</li>
+        <li><span>A</span>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</li>
+        <li><span>Q</span>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</li>
+        <li><span>A</span>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</li>
+        <li><span>Q</span>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</li>
+        <li><span>A</span>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</li>
+        <li><span>Q</span>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</li>
+        <li><span>A</span>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</li>
       </ul>
-      <p>不用品買取・回収、残置物撤去</p>
     </div><!--/#FAQ-->
 
     <div id="CONTACT">
       <h2>CONTACT</h2>
-      <p>不用品買取・回収、残置物撤去</p>
+      <p>お問い合わせ、お見積りのご依頼はお電話またはメールより承ります。</p>
+      <div class="button-wrapper">
+        <button type=“button” onclick="window.open('mailto:hosoe-m@acct-inc.com')">メール</button>
+        <button type="button" onclick="window.open('tel:0561-67-0629')" class="tel-desktop-none">電　話</button>
+        <button type="button" onclick="window.open('images/tel.jpg')" class="tel-mobile-none">電　話</button>
+      </div><!--/.button-wrapper-->
     </div><!--/#CONTACT-->
 
     <div id="SNS">
       <h2>SNS</h2>
-      <p>不用品買取・回収、残置物撤去</p>
+      <button type=“button” onclick="window.open('https://www.instagram.com/antique_one.0801/')">Instagram</button>
+      <!-- SnapWidget -->
+      <script src="https://snapwidget.com/js/snapwidget.js"></script>
+      <iframe src="https://snapwidget.com/embed/1063373" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; " title="Posts from Instagram"></iframe>
     </div><!--/#SNS-->
 
   </div><!--/.wrapper-->
@@ -209,50 +217,50 @@
   <script>
   "use strict";
   //ホバー時にテキストを変更
-    const TOP = document.querySelector('.h-top');
-    const COMPANY = document.querySelector('.h-company');
-    const SERVICES = document.querySelector('.h-services');
-    const WORKS = document.querySelector('.h-works');
-    const FAQ = document.querySelector('.h-faq');
-    const CONTACT = document.querySelector('.h-contact');
+  const TOP = document.querySelector('.h-top');
+  const COMPANY = document.querySelector('.h-company');
+  const SERVICES = document.querySelector('.h-services');
+  const WORKS = document.querySelector('.h-works');
+  const FAQ = document.querySelector('.h-faq');
+  const CONTACT = document.querySelector('.h-contact');
   
-    TOP.addEventListener('mouseenter', function() {
+  TOP.addEventListener('mouseenter', function() {
       this.textContent = 'ページトップ';
-    });
-    COMPANY.addEventListener('mouseenter', function() {
+  });
+  COMPANY.addEventListener('mouseenter', function() {
       this.textContent = '会社概要';
-    });
-    SERVICES.addEventListener('mouseenter', function() {
+  });
+  SERVICES.addEventListener('mouseenter', function() {
       this.textContent = '事業内容';
-    });
-    WORKS.addEventListener('mouseenter', function() {
+  });
+  WORKS.addEventListener('mouseenter', function() {
       this.textContent = '作業事例';
-    });
-    FAQ.addEventListener('mouseenter', function() {
+  });
+  FAQ.addEventListener('mouseenter', function() {
       this.textContent = 'よくあるご質問';
-    });
-    CONTACT.addEventListener('mouseenter', function() {
+  });
+  CONTACT.addEventListener('mouseenter', function() {
       this.textContent = 'お問い合わせ';
-    });
+  });
   
-    TOP.addEventListener('mouseleave', function() {
+  TOP.addEventListener('mouseleave', function() {
       this.textContent = 'TOP';
-    });
-    COMPANY.addEventListener('mouseleave', function() {
+  });
+  COMPANY.addEventListener('mouseleave', function() {
       this.textContent = 'COMPANY';
-    });
-    SERVICES.addEventListener('mouseleave', function() {
+  });
+  SERVICES.addEventListener('mouseleave', function() {
       this.textContent = 'SERVICES';
-    });
-    WORKS.addEventListener('mouseleave', function() {
+  });
+  WORKS.addEventListener('mouseleave', function() {
       this.textContent = 'WORKS';
-    });
-    FAQ.addEventListener('mouseleave', function() {
+  });
+  FAQ.addEventListener('mouseleave', function() {
       this.textContent = 'FAQ';
-    });
-    CONTACT.addEventListener('mouseleave', function() {
+  });
+  CONTACT.addEventListener('mouseleave', function() {
       this.textContent = 'CONTACT';
-    });
+  });
 
 
   //ハンバーガーメニューの表示/非表示を切り替え
@@ -273,6 +281,7 @@
   });
 
 
+  
   </script>
 
 </body>
