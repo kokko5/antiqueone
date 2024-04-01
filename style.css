@@ -2,8 +2,9 @@
 
 /*共通部分*/
 
-html {font-size: 100%;
-      background-color: rgba(51,51,51,0.7);}
+html {
+    font-size: 100%;
+    background-color: rgba(51,51,51,0.7);}
 
 body {
     font-family: "Noto Sans JP", sans-serif;
@@ -16,7 +17,9 @@ a {text-decoration:none;}
 
 img {max-width:100%}
 
-h2 {font-size: 2.5rem;
+h2 {
+    font-family: "Sen", sans-serif;
+    font-size: 2.5rem;
     font-weight: normal;
     text-align: center;
     padding-top: 10rem;
@@ -26,7 +29,7 @@ h2 {font-size: 2.5rem;
 p {font-size: 1rem;}
 
 .wrapper {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 4%;
 }
@@ -36,7 +39,7 @@ p {font-size: 1rem;}
 
 
 /*ヘッダー*/
-header {
+header {z-index: 3;
     position:fixed;
     background: #333;
     width: 100vw;
@@ -54,7 +57,9 @@ header {
     margin: 1rem 1rem;
     list-style: none;}
 
-.nav__list li {margin-left: 2.5rem;}
+.nav__list li {
+    font-family: "Sen", sans-serif;
+    margin-left: 2.5rem;}
 .nav__list a {color: #fff;}
 .nav__list li a:hover {
     color:#A0E080;
@@ -67,11 +72,27 @@ header {
 
 
 /*コンテンツ部分*/
-#TOP{
-    height: 120vh;
-    background-size: cover;
-    background-image: url(images/topbg.jpg);
-    margin-bottom: 20vh;
+#TOP {
+    position: relative; /* 親要素を相対位置にする */
+}
+#TOP img{
+    width: 100%;
+    object-fit: cover;
+}
+#TOP h2{
+    position: absolute; /* 絶対位置にする */
+    top: 0; /* 上端に配置 */
+    left: 50%; /* 水平方向の中央に配置 */
+    transform: translateX(-50%); /* 中央揃え */
+    width: 100%; /* 幅を親要素に合わせる */
+    z-index: 1; /* 画像より上に配置 */
+}
+.scroll{
+    font-family: "Sen", sans-serif;
+    text-align: center;
+}
+#COMPANY{
+    margin-top: 8rem;
 }
 .shadow-bg{
     height: 46rem;
@@ -80,24 +101,31 @@ header {
     background-image: url(images/seto.png);
 }
 .company-explanation{
-    width: 45%;
+    width: 47%;
     margin: 3rem auto;
 }
 .info{
-    margin-top: 3rem;
-    display: flex;
-    justify-content: space-around;
+    margin: 4rem auto;
+    text-align: center;
 }
 table{
-    margin-left: 1%;
-    width: 90%;
+    width: 80%;
+    margin: 0 auto;
 }
 table th,
 table td {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
+    text-align: left;
 }
-.maps{
-    padding-left: 1%;
+table tr:nth-child(odd){
+    background: #333;
+}
+table tr:nth-child(even){
+    background: #444;
+}
+.map{
+    width: 89%;
+    margin: 2rem auto;
 }
 .services-photo{
     margin: 3rem auto;
@@ -106,24 +134,84 @@ table td {
     grid-template-rows: 1fr 1fr;
     gap: 0.5em;
 }
-.one-services-photo{
-    background: #000;
+.services-photo-p{
     text-align: center;
+    background: #333;
+    font-size: 1.2rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+.adj-small{
+    text-align: center;
+    background: #333;
+    font-size: 0.85rem;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+}
+.works-exs{
+    margin: 3rem auto;
+    text-align: center;
+}
+.works-exs p{
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
 }
 .works-ex{
     display: flex;
+    justify-content: center;
+    gap: 2rem;
 }
-.works-ex:nth-child(even){
-    flex-direction: row-reverse;
+.works-ex img{
+    width: 40%;
 }
-
+.faq-container{
+    margin-top: 2rem;
+    text-align: center;
+    list-style: none;
+}
+.faq-container li:nth-child(odd){
+    background: #333;
+}
+.faq-container li:nth-child(even){
+    background: #444;
+}
+span{
+    font-family: "Sen", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-right: .5rem;
+}
+#CONTACT{
+    text-align: center;
+}
+#CONTACT p{
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+}
+.button-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+button{
+    color: #fff;
+    background: #333;
+    padding: 1rem 5rem;
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.4);
+}
+.tel-desktop-none{
+    display: none;
+}
+#SNS button{display: block;
+    margin: 2.5rem auto;
+}
 
 
 /*フッター*/
 footer{
     background: #333;
     text-align: center;
-    padding: 26px 0;
+    padding: 1rem 0;
 }
 footer p {
     color: #fff;
@@ -212,7 +300,7 @@ footer p {
     transition: all 0.5s;
     border-top: 1px solid #fff;
   }
-  .nav__item a {
+  .nav__item .nav__link {
     display: block;
     font-size: 20px;
     color: #fff;
@@ -239,6 +327,13 @@ footer p {
 .company-explanation{
     width: 100%;
     margin: 3rem auto;
+}
+
+.tel-desktop-none{
+    display: inline-block;
+}
+.tel-mobile-none{
+    display: none;
 }
 
 }/*/@media (max-width:600px)*/
