@@ -65,7 +65,10 @@ header {z-index: 3;
     color:#A0E080;
     transition: color 0.5s ease;
 }
-.hamburger{
+.hamburger {
+    display: none;
+}
+.sub-ja {
     display: none;
 }
 
@@ -91,7 +94,7 @@ header {z-index: 3;
     font-family: "Sen", sans-serif;
     text-align: center;
 }
-#COMPANY{
+#ABOUTUS{
     margin-top: 8rem;
 }
 .shadow-bg{
@@ -103,29 +106,6 @@ header {z-index: 3;
 .company-explanation{
     width: 47%;
     margin: 3rem auto;
-}
-.info{
-    margin: 4rem auto;
-    text-align: center;
-}
-table{
-    width: 80%;
-    margin: 0 auto;
-}
-table th,
-table td {
-    padding: 0.5rem 2rem;
-    text-align: left;
-}
-table tr:nth-child(odd){
-    background: #333;
-}
-table tr:nth-child(even){
-    background: #444;
-}
-.map{
-    width: 89%;
-    margin: 2rem auto;
 }
 .services-photo{
     margin: 3rem auto;
@@ -216,7 +196,29 @@ button{
 #SNS button{display: block;
     margin: 2.5rem auto;
 }
-
+.info{
+    margin: 4rem auto;
+    text-align: center;
+}
+table{
+    width: 80%;
+    margin: 0 auto;
+}
+table th,
+table td {
+    padding: 0.5rem 2rem;
+    text-align: left;
+}
+table tr:nth-child(odd){
+    background: #333;
+}
+table tr:nth-child(even){
+    background: #444;
+}
+.map{
+    width: 89%;
+    margin: 2rem auto;
+}
 
 /*フッター*/
 footer{
@@ -233,7 +235,7 @@ footer p {
 
 
 /*モバイル版*/
-@media (max-width:600px){
+@media (max-width:800px){
     .wrapper {
         max-width: 90vw;
         margin: 0 auto;
@@ -250,12 +252,17 @@ footer p {
     margin-right: 2%;
     margin-left: auto;
     }
-
     .nav__list {
         display: block;        
         margin: 1rem 1rem;
     }
-    .nav__list li {margin-left: 0;}    
+    .nav__list li {margin-left: 0;}
+    .sub-ja {
+        display: inline-block;
+        font-size: 0.5rem;
+        vertical-align: middle;
+        padding-left: 0.5rem;
+    }    
   
     /*ハンバーガーボタンのスタイリング*/
   .hamburger {
