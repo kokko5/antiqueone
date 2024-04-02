@@ -76,19 +76,23 @@ header {z-index: 3;
 
 /*コンテンツ部分*/
 #TOP {
-    position: relative; /* 親要素を相対位置にする */
+    position: relative;
 }
 #TOP img{
     width: 100%;
     object-fit: cover;
 }
 #TOP h2{
-    position: absolute; /* 絶対位置にする */
-    top: 0; /* 上端に配置 */
-    left: 50%; /* 水平方向の中央に配置 */
-    transform: translateX(-50%); /* 中央揃え */
-    width: 100%; /* 幅を親要素に合わせる */
-    z-index: 1; /* 画像より上に配置 */
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #004e6d;
+    text-shadow: 1px 1px 4px #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 1;
 }
 .scroll{
     font-family: "Sen", sans-serif;
